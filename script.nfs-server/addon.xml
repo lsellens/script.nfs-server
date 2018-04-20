@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.nfs-server"
+       name="nfs-server"
+       version="0.0.1"
+       provider-name="lsellens">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Addon to manage NFS kernel server</summary>
+    <description>Addon to create and edit NFS kernel server exports file.</description>
+    <platform>linux</platform>
+    <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+    <source>https://github.com/lsellens/script.nfs-server</source>
+    <news>0.0.1 - Inital addon</news>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon>
