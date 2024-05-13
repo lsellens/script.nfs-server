@@ -21,7 +21,7 @@ def service(state):
 
 
 def writeexports():
-    file = xbmcvfs.File(xbmc.translatePath('/storage/.config/exports'), 'w')
+    file = xbmcvfs.File(xbmcvfs.translatePath('/storage/.config/exports'), 'w')
     for i in range(0, int(shares)):
         exec('folder{0} = __addon__.getSetting("SHARE_FOLDER{0}")'.format(i))
         exec('permission{0} = __addon__.getSetting("PERMISSION{0}")'.format(i))
